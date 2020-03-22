@@ -8,7 +8,7 @@ export const NavBar = () => {
       <div class="logo">
 
       </div>
-      <a class="btn">
+      <a href="#home" class="btn">
         <span></span>
         <span></span>
         <span></span>
