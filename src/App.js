@@ -1,20 +1,20 @@
-import React from 'react';
-import './App.css';
-import { Header } from './components/Header';
-import { NavBar } from './components/NavBar';
+// import React from 'react';
+// import './App.css';
+// import { Header } from './components/Header';
+// import { NavBar } from './components/NavBar';
 
-function App() {
-  return (
-    <div>
+// function App() {
+//   return (
+//     <div>
 
-     <NavBar />
-
-
-     <Header />
+//      <NavBar />
 
 
-    </div>
-  );
-}
+//      <Header />
 
-export default App;
+
+//     </div>
+//   );
+// }
+
+// export default App;

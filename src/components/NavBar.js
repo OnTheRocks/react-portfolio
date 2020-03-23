@@ -1,27 +1,35 @@
 import React from 'react'
+import { BrowserRouter as Router,Link } from "react-router-dom";
+
 
 import '../CSS/NavBar.css';
 
 export const NavBar = () => {
+  const menuItems = ['Home', 'About', 'Works', 'Contact'];
+  const menuLinks = menuItems.map(menuItem => {
+      return (
+        <Link to={"/" + menuItem }>{menuItem}</Link>
+      )
+  });
   return (
-    <div class="navbar">
-      <div class="logo">
-
+    <Router>
+    <div className="navbar">
+      <div className="logo">
+        Nathan Huber
       </div>
-      <a href="#home" class="btn">
+      {/* <button className="btn">
         <span></span>
         <span></span>
         <span></span>
-      </a>
-      <div class="menu">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#works">Works</a>
-        <a href="#contact">Contact</a>
+      </button> */}
+      <div className="menu show">
+        {menuLinks}
+
+        
       </div>
 
     </div>
-
-
+    </Router>
   )
+ 
 }
