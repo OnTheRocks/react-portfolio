@@ -1,14 +1,14 @@
 import React from 'react'
-import { BrowserRouter as Router,Link } from "react-router-dom";
+import { BrowserRouter as Router,} from "react-router-dom";
 
 
 import '../CSS/NavBar.css';
 
 export const NavBar = () => {
-  const menuItems = ['Home', 'About', 'Works', 'Contact'];
+  const menuItems = ['About', 'Portfolio', 'Contact', ];
   const menuLinks = menuItems.map(menuItem => {
       return (
-        <Link to={"/" + menuItem }>{menuItem}</Link>
+        <a href={"/" + menuItem }>{menuItem}</a>
       )
   });
   return (
@@ -23,7 +23,9 @@ export const NavBar = () => {
         <span></span>
       </button> */}
       <div className="menu show">
-        {menuLinks}
+       {menuLinks}
+       <a href="https://www.github.com/OnTheRocks" target="blank"><i class="fab fa-github"></i></a>
+       <a href="https://www.linkedin.com/in/nathan-huber-93172053/" target="blank"><i class="fab fa-linkedin"></i></a>
 
         
       </div>
