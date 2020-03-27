@@ -8,7 +8,7 @@
   margin-top: 250px;
   border-radius: .4rem;
   border: darkgray thin solid;
-  color: darkgray;
+  color: lightgray;
   text-align: justify;
 }
 
@@ -21,7 +21,7 @@
 
   margin: 20px 0;
   border-bottom: 2px solid Darkgray;
-  color: darkgray;
+  color: lightgray;
 
 }
 
@@ -37,7 +37,7 @@
 
 p {
   margin-left: 20px;
-  color: darkgray;
+  color: lightgray;
   padding: 0;
 }
 

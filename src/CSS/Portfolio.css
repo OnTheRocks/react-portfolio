@@ -9,4 +9,11 @@
 .card-body{
   background-color: rgba(47,79,79,.4) ;
   border: darkgray thin solid;
+  text-align: center;
+  color: lightgray ;
+}
+
+.card-text{
+  text-align: left;
+  color: lightgray ;
 }
