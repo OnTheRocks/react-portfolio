@@ -1,8 +1,8 @@
 import React from 'react'
 import '../CSS/Portfolio.css'
-import cumple from '../img/cumple.gif';
+import cumple from '../img/cumpleanos.png';
 import Password from '../img/Password.jpg';
-import Weather from '../img/Weather.jpg';
+import Weather from '../img/Weather.png';
 import Planner from '../img/Planner.jpg';
 import QuizTime from '../img/QuizTime.jpg';
 import CastCall from '../img/CastCall.PNG';
@@ -27,8 +27,10 @@ export const Portfolio = () => {
           <div className="card-body">
             <h4 className="card-title">Cumpleanos</h4>
             <p className="card-text">This is an app completed with a group from my coding bootcamp. You enter in the Month and Day you were born, and it pulls
-              back som interesting infromation about that day.</p>
-            <a href="https://ontherocks.github.io/BirthdayProject/" target="blank" className="btn btn-success">Cumpleanos</a>
+              back some interesting infromation about that day.</p>
+              <button type="button" class="btn btn-success">Success</button>
+            {/* <a href="https://github.com/OnTheRocks/Cumpleanos.git" className="btn btn-success">Cumpleanos</a> */}
+            <button type="button" class="btn btn-success">Cumpleaños</button>
           </div>
         </div>
 
@@ -44,7 +46,7 @@ export const Portfolio = () => {
         <div className="card">
           <img src={Weather} className="card-img-top" alt="..."/>
           <div className="card-body">
-            <h5 className="card-title">Weather App</h5>
+            <h5 className="card-title">Weather Search</h5>
             <p className="card-text">This app will give the the current conditions as well as a 5-day forecast wherever you are.</p>
             <a href="https://ontherocks.github.io/WeatherSearch/" target="blank" className="btn btn-success">Weather Search</a>
         </div>

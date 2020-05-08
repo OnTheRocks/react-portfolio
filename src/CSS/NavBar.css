@@ -35,12 +35,12 @@
   color: #6ab04c;
 }
 
-.btn{
+/* .btn{
   display: none ;
   position: absolute;
   right: 20px;
+} */
 
-}
 .btn:hover > span{
   background: rgba(47,79,79);
 }
