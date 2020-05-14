@@ -1,37 +1,39 @@
 import React from 'react'
 import { BrowserRouter as Router,} from "react-router-dom";
+import '../css/NavBar.css';
 
-
-import '../CSS/NavBar.css';
-
-export const NavBar = () => {
-  const menuItems = ['About', 'Portfolio', 'Contact', ];
-  const menuLinks = menuItems.map(menuItem => {
-      return (
-        <a href={"/" + menuItem }>{menuItem}</a>
-      )
-  });
+export class NavBar extends React.Component {
+ render() {
   return (
     <Router>
-    <div className="navbar">
-      <div className="logo">
-        Nathan Huber
+     <nav className="navbar navbar-expand-lg ">
+    <a className="navbar-brand" style={{color:'#5cb85c'}}   href="/">Nathan Huber</a>
+    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+  
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav  mx-auto">
+        <li className="nav-item active">
+          <a className="nav-link" style={{color:'#5cb85c'}}  href="/about">About <span className="sr-only">(current)</span></a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" style={{color:'#5cb85c'}}  href="/portfolio">Portfolio</a>
+        </li>        
+        <li className="nav-item ">
+          <a className="nav-link" style={{color:'#5cb85c'}}  href="/contact">Contact</a>
+        </li>        
+      </ul>
+      <div className="info" >
+       <a href="https://www.github.com/OnTheRocks" target="blank"><i className="mr-2 fab fa-github" style={{color:'#5cb85c'}} ></i></a>
+       <a href="https://www.linkedin.com/in/nathan-huber-93172053/" target="blank"><i className="fab fa-linkedin"style={{color:'#5cb85c'}}></i></a>
+  
       </div>
-      {/* <button className="btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button> */}
-      <div className="menu show">
-       {menuLinks}
-       <a href="https://www.github.com/OnTheRocks" target="blank"><i class="fab fa-github"></i></a>
-       <a href="https://www.linkedin.com/in/nathan-huber-93172053/" target="blank"><i class="fab fa-linkedin"></i></a>
-
-        
       </div>
+  </nav>
+  </Router>
 
-    </div>
-    </Router>
-  )
- 
+
+  ) 
+}
 }

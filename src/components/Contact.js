@@ -1,30 +1,31 @@
 import React from 'react'
-import '../CSS/Contact.css';
+import Hero from './Hero'
+import Form from 'react-bootstrap/Form';
 
-export const Contact = () => {
-  return (
-    <div className="container ">
-        <div className="row">
-          <div className="col-md-12">
-            <h3>Contact Me</h3>
-            <p className="lead">Leave a message below if you have any questions or comments.</p>
-            <form>
-              <div class="form-group">
-                <label for="formGroupExampleInput"></label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name"/>
-              </div>
-              <div class="form-group">
-                <label for="formGroupExampleInput2"></label>
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Address"/>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
-               </div>
-            </form>
-          </div>
-        </div>    
-       
+export class Contact extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      message: '',
+      disabled: false,
+      emailSent: null,
+    }
+  }
+  render() {
+    return (
+      <div>
+        <Hero title={this.props.title} />
+
+        <content>
+          <Form >
+            <Form.Group>
+              <Form.Label htmlFor="Full Name">Full Name</Form.Label>
+            </Form.Group>
+          </Form>
+        </content>
       </div>
-  );
+    )
+  }
 }

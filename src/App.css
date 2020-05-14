@@ -1,16 +1,16 @@
-body{
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Montserrat";
-  background-image: url("../src/img/mainBG4.jpg") ;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #000000;
+}
 
-  /* background-size: 75%; */
-  background-position: 50% 50%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  }
 
-  background-color: black;
-
+a {
+  color: #333;
+  text-decoration: none;
 }
