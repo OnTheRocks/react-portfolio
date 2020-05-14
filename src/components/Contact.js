@@ -21,7 +21,8 @@ export class Contact extends React.Component {
         <content>
           <Form >
             <Form.Group>
-              <Form.Label htmlFor="Full Name">Full Name</Form.Label>
+              <Form.Label htmlFor="Full-name">Full Name</Form.Label>
+              <Form.Control id="Full Name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
             </Form.Group>
           </Form>
         </content>

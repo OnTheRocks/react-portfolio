@@ -7,5 +7,6 @@
 }
 
 .navbar {
+  background-color: #000000 !important;
   border-bottom:thin solid #5cb85c;
 }
