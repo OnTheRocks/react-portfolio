@@ -1,6 +1,7 @@
 import React from 'react'
-import Hero from './Hero'
+import MainSec from './MainSec'
 import Form from 'react-bootstrap/Form';
+import Axios from 'axios';
 
 export class Contact extends React.Component {
   constructor(props) {
@@ -31,14 +32,40 @@ export class Contact extends React.Component {
 
     this.setState({
       disabled: true,
-      emailSent: true
+      emailSent: false
     });
-  }
+
+Axios.post('http://localhost:3030/api/email', this.state)
+.then(res => {
+    if(res.data.success) {
+        this.setState({
+            disabled: false,
+            emailSent: true
+        });
+    } else {
+        this.setState({
+            disabled: false,
+            emailSent: false
+        });
+    }
+})
+.catch(err => {
+    console.log(err);
+
+    this.setState({
+        disabled: false,
+        emailSent: false
+    });
+})
+
+}
+
+
 
   render() {
     return (
       <div>
-        <Hero title={this.props.title} />
+        <MainSec title={this.props.title} />
 
         <content>
           <Form onSubmit={this.handleSubmit}>
@@ -65,6 +92,6 @@ export class Contact extends React.Component {
           </Form>
         </content>
       </div>
-    )
+    );
   }
 }
