@@ -17,7 +17,7 @@ export class Contact extends React.Component {
 
   handleChange = (event) => {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.value;
     const name = target.name;
 
     this.setState({
@@ -32,14 +32,13 @@ export class Contact extends React.Component {
 
     this.setState({
       disabled: true,
-      emailSent: false
     });
 
-Axios.post('http://localhost:3030/api/email', this.state)
+Axios.post('http://localhost:5454/api/email', this.state)
 .then(res => {
     if(res.data.success) {
         this.setState({
-            disabled: false,
+            disabled: true,
             emailSent: true
         });
     } else {
