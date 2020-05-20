@@ -7,8 +7,12 @@ import {NavBar} from './components/NavBar';
 import Portfolio from './components/Portfolio';
 import { Contact } from './components/Contact';
 import About from './components/About.js';
+import Index from './components/Index.js';
 
-
+const indexText = [
+  <a href="https://www.github.com/OnTheRocks" className="icon" target="blank"><i className="mr-3 pt-1 fab fa-github " style={{color:'#5cb85c'}} ></i></a>,
+  <a href="https://www.linkedin.com/in/nathan-huber-93172053/" target="blank"><i className="fab fa-linkedin "style={{color:'#5cb85c'}}></i></a>
+]
 
 
 class App extends React.Component {
@@ -18,16 +22,21 @@ class App extends React.Component {
     super(props);
     this.state = {
       
+      Index: {
+        title: "Nathan Huber",
+        text: "Full Stack Web Developer",
+        text2: indexText        
+      },
       About: {
-        title: 'Be Relentless',
+        title: 'About Me',        
+      },
+      Portfolio: {
+        title: 'Portfolio',
         subTitle: 'Projects that make a difference',
         text: 'Checkout my projects below'
       },
-      Portfolio: {
-        title: 'About Me'
-      },
       contact: {
-        title: 'Let\'s Talk'
+        title: 'Contact Me'
       }
     }
   }
@@ -39,9 +48,9 @@ render(){
         <NavBar />
         <Switch>
 
-          <Route path="/" exact render={() => <About title={this.state.About.title} subTitle={this.state.About.subTitle} text={this.state.About.text} />} />
-          <Route path="/about" render={() => <About title={this.state.About.title} subTitle={this.state.About.subTitle} text={this.state.About.text} />} />
-          <Route path="/portfolio" render={() => <Portfolio title={this.state.Portfolio.title} />} />
+          <Route path="/" exact render={() => <Index title={this.state.Index.title} text={this.state.Index.text} text2={this.state.Index.text2} />} />
+          <Route path="/about" render={() => <About title={this.state.About.title} />} />
+          <Route path="/portfolio" render={() => <Portfolio title={this.state.Portfolio.title} subTitle={this.state.Portfolio.subTitle} text={this.state.Portfolio.text}  />} />
           <Route path="/contact" render={() => <Contact title={this.state.contact.title} />} />
 
           <Route path="*" component={About} />

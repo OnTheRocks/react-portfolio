@@ -1,13 +1,15 @@
 import React from 'react'
 import MainSec from './MainSec';
+import Content from './Content'
 
 function Portfolio(props) {
 
     return (
-      <div>
-        <MainSec title={props.title} />
-        <h1>Hello from Portfolio.</h1>
-      </div>
+      <Content>
+        <div>        
+          <MainSec title={props.title} subTitle={props.subTitle} text={props.text}  />            
+        </div>
+      </Content>
     )
   }
 

@@ -23,11 +23,11 @@ export class NavBar extends React.Component {
           <a className="nav-link" style={{color:'#5cb85c'}}  href="/portfolio">Portfolio</a>
         </li>        
         <li className="nav-item ">
-          <a className="nav-link" style={{color:'#5cb85c'}}  href="/contact">Contact</a>
+          <a className="nav-link " style={{color:'#5cb85c'}}  href="/contact">Contact</a>
         </li>        
       </ul>
       <div className="info" >
-       <a href="https://www.github.com/OnTheRocks" target="blank"><i className="mr-2 fab fa-github" style={{color:'#5cb85c'}} ></i></a>
+       <a href="https://www.github.com/OnTheRocks" className="icon" target="blank"><i className="mr-2 fab fa-github" style={{color:'#5cb85c'}} ></i></a>
        <a href="https://www.linkedin.com/in/nathan-huber-93172053/" target="blank"><i className="fab fa-linkedin"style={{color:'#5cb85c'}}></i></a>
   
       </div>
