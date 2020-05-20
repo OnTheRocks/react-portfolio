@@ -9,12 +9,16 @@ const app = express();
 const host = process.env.HOST;
 const user = process.env.USER;
 const pw = process.env.PW;
-
+const PORT = process.env.PORT || 5454;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.use(cors());
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"))
+}
 
 
 app.get('/api', (req, res) => {
@@ -80,4 +84,4 @@ app.post('/api/email', (req, res) => {
 });
 
 
-app.listen(5454, () => console.log('Server started on port 5454...'));
+app.listen(PORT, () => console.log(`Server started on port  ${PORT}.`));

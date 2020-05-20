@@ -27,7 +27,7 @@ body {
     background: rgba(0,0,0, 0.75);
   }
 
-  #overlay {
+  /* #overlay {
     position: absolute;
     top: 0;
     right: 0;
@@ -35,7 +35,7 @@ body {
     height: 100%;
     z-index: -1;
     background: rgba(0,0,0, 0.75);
-  }
+  } */
 
   /* #iPad {
     padding-top: 200px;
