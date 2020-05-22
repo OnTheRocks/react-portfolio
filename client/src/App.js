@@ -32,7 +32,7 @@ class App extends React.Component {
       },
       Portfolio: {
         title: 'Portfolio',
-        subTitle: 'Projects that make a difference',
+        subTitle: 'Something clever should go here...',
         text: 'Checkout my projects below'
       },
       contact: {
