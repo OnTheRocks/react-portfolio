@@ -4,7 +4,7 @@
   "proxy": "http://localhost:5454/",
   "scripts": {
     "start": "PROD=true node server.js",
-    "postinstall": "cd ./client && npm install"
+    "postinstall": "cd ./client && npm build"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
