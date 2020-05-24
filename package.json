@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "PROD=true node server.js",
-    "postinstall": "cd ./client && npm build"
+    "build": "cd ./client && npm build",
+    "postinstall": "npm run build"
+
   },
   "dependencies": {
     "body-parser": "^1.19.0",
