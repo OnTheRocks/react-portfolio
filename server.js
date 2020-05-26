@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static( 'client/build' ));
 
   app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'client', 'build', 'index.html')); // relative path
+      res.sendFile(path.join(__dirname, 'client', 'build', 'index.html')); 
   });
 }
 
@@ -62,8 +62,8 @@ app.post('/api/email', (req, res) => {
   
     // send mail with defined transport object
     let mailOptions = {
-      from: '"Nodemailer Contact 👻" <ChicagoN8@gmail.com>', // sender address
-      to: "nathan_huber@yahoo.com, ChicagoN8@Gmail.com", // list of receivers
+      from: '"Nodemailer Contact 👻" <nathan_huber@comcast.net>', // sender address
+      to: "nathan_huber@yahoo.com, nathan_huber@comcast.net, ChicagoN8@Gmail.com", // list of receivers
       subject: "Node Contact Request", // Subject line
       text: "Hello world?", // plain text body
       html: output, // html body
