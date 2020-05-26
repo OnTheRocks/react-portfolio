@@ -89,4 +89,4 @@ app.post('/api/email', (req, res) => {
 });
 
 
-app.listen(PORT, () => console.log(`Server started on port  ${PORT}.`));
+app.listen(PORT, () => console.log(`Nate's Nodemailer server started on port  ${PORT}.`));
