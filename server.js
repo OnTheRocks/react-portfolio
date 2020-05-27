@@ -10,7 +10,7 @@ const path = require("path");
 const host = process.env.HOST;
 const user = process.env.USER;
 const pw = process.env.PW;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5454;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
