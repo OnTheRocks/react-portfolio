@@ -7,9 +7,9 @@ const nodemailer = require('nodemailer');
 const app = express();
 const path = require("path");
 
-// const host = process.env.HOST;
-// const user = process.env.USER;
-// const pw = process.env.PW;
+const host = process.env.HOST;
+const user = process.env.USER;
+const pw = process.env.PW;
 const PORT = process.env.PORT || 5454;
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -46,12 +46,12 @@ app.post('/api/email', (req, res) => {
 
     // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-      host: process.env.HOST,
+      host: host,
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: process.env.USER, // generated ethereal user
-        pass: process.env.PW // generated ethereal password
+        user: user, // generated ethereal user
+        pass: pw // generated ethereal password
       },
       tls:{
         rejectUnauthorized:false
