@@ -38,7 +38,7 @@ export class Contact extends React.Component {
       disabled: true,
     });
 
-Axios.post('http://localhost:5454/api/email', this.state)
+Axios.post('/api/email', this.state)
 .then(res => {
     if(res.data.success) {
         this.setState({
