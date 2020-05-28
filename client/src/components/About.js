@@ -14,8 +14,8 @@ function About(props) {
 
       <div>
        <h3 style={{color:'#bfbfbf'}}>My name is Nathan Huber. I'm a full stack web developer with experience in React, Express JS, Node JS, MySQL, and MongoDB.</h3>
-       <h3 style={{color:'#bfbfbf'}}>I have a background in IT which has helped me develop great communication and troubleshooting skills as well has excellent organizational skills.</h3>
-       <h3 style={{color:'#bfbfbf'}}>I'm constantly learning new things. currently those things include gaining more experience with MongoDB, React, Express JS, Node JS as well as Python.</h3>
+       <h3 style={{color:'#bfbfbf'}}>I have a background in IT which has helped me develop great communication and troubleshooting skills as well as excellent organizational skills.</h3>
+       <h3 style={{color:'#bfbfbf'}}>I'm constantly learning new things. Currently those things include gaining more experience with MongoDB, React, Express JS, Node JS as well as Python.</h3>
       </div>
 
       </Content>
