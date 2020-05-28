@@ -32,8 +32,8 @@ class App extends React.Component {
       },
       Portfolio: {
         title: 'Portfolio',
-        subTitle: 'Something clever should go here...',
-        text: 'Checkout my projects below'
+        subTitle: 'This page will continue to evolve',
+        text: 'Checkout my latest projects below'
       },
       contact: {
         title: 'Contact Me'
