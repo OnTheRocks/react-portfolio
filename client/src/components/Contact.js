@@ -7,8 +7,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Axios from 'axios';
 
-const PORT = process.env.PORT || 'http://localhost:5454/api/email';
-
 export class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -44,7 +42,7 @@ export class Contact extends React.Component {
       
     });
 
-Axios.post(PORT, this.state)
+Axios.post('/api/email', this.state)
 .then(res => {
     if(res.data.success) {
         this.setState({
