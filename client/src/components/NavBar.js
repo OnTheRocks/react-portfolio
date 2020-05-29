@@ -28,7 +28,8 @@ export class NavBar extends React.Component {
       </ul>
       <div className="info" >
        <a href="https://www.github.com/OnTheRocks" className="icon" target="blank"><i className="mr-2 fab fa-github" style={{color:'#5cb85c'}} ></i></a>
-       <a href="https://www.linkedin.com/in/nathan-huber-93172053/" target="blank"><i className="fab fa-linkedin"style={{color:'#5cb85c'}}></i></a>
+       <a href="https://www.linkedin.com/in/nathan-huber-93172053/" target="blank"><i className="mr-2 fab fa-linkedin"style={{color:'#5cb85c'}}></i></a>
+       <a href="https://docs.google.com/document/d/1mKyxD38PCIjQTQxVTWOrWyuvGvDiAcKCPv7dMXvCx20/edit?usp=sharing" className="icon" target="blank"><i className="mr-2 fab fa-google-drive" style={{color:'#5cb85c'}} ></i></a>
   
       </div>
       </div>
