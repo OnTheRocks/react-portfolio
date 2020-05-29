@@ -11,7 +11,15 @@
   border-bottom:thin solid #5cb85c;
 }
 
-a:hover {
-  color: blue;
+#FUCK:hover {
+  color: blueviolet !important;
 }
-
+a #FUCK:hover {
+  color: blueviolet !important;
+}
+.icon:hover {
+  color: blueviolet !important;
+}
+a .icon:hover {
+  color: blueviolet !important;
+}

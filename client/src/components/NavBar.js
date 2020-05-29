@@ -7,7 +7,7 @@ export class NavBar extends React.Component {
   return (
     <Router>
      <nav className="navbar navbar-expand-lg nav">
-    <a className="navbar-brand" style={{color:'#5cb85c'}}   href="/">Nathan Huber</a>
+    <a className="navbar-brand" style={{color:'#5cb85c'}}>Nathan Huber</a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-ico">   
     <i className="fas fa-bars" style={{color:'#5cb85c'}}></i>
