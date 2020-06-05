@@ -73,7 +73,7 @@ Axios.post('/api/email', this.state)
     return (
       <div>
         <Content>
-          <MainSec title={this.props.title} />
+          <MainSec title={this.props.title} eMail={this.props.eMail} />
           <Container fluid={true}>
             <Row className="justify-content-center">
             <Col md={8}>

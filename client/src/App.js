@@ -9,6 +9,8 @@ import Portfolio from './components/Portfolio';
 import { Contact } from './components/Contact';
 import About from './components/About.js';
 
+// const email = 
+
 
 const indexText = [
   <a href="https://www.github.com/OnTheRocks" className="icon" target="blank"><i className="mr-3 pt-1 fab fa-github " style={{color:'#5cb85c'}} ></i></a>,
@@ -30,10 +32,11 @@ class App extends React.Component {
       Portfolio: {
         title: 'Portfolio',
         subTitle: 'This page will continue to evolve',
-        text: 'Checkout my latest projects below, click on image for more information'
+        text: 'Check out my latest projects below, click on image for more information'
       },
-      contact: {
-        title: 'Contact Me'
+      Contact: {
+        title: 'Contact Me',
+        eMail: 'Nathan_Huber@Yahoo.com'
       }
     }
   }
@@ -48,7 +51,7 @@ render(){
           <Route path="/" exact render={() => <About title={this.state.About.title} subTitle={this.state.About.subTitle} />} />
           <Route path="/about" render={() => <About title={this.state.About.title} subTitle={this.state.About.subTitle} />} />
           <Route path="/portfolio" render={() => <Portfolio title={this.state.Portfolio.title} subTitle={this.state.Portfolio.subTitle} text={this.state.Portfolio.text}  />} />
-          <Route path="/contact" render={() => <Contact title={this.state.contact.title} />} />
+          <Route path="/contact" render={() => <Contact title={this.state.Contact.title} eMail={this.state.Contact.eMail} />} />
 
           <Route path="*" component={About} />
         </Switch>
