@@ -9,7 +9,8 @@ function CardInfo(props) {
         <animated.div className="myCard-info" style={style}>
             <p className="myCard-title" style={{color:'#5cb85c'}}>{props.title}</p>
             <p className="myCard-sub-title" style={{color:'#BFBFBF'}} >{props.subTitle}</p>
-            <a href={props.link} target="_blank" style={{color:'#BFBFBF'}} rel="noopener noreferrer">View</a>
+            <a href={props.gitHub} target="_blank" style={{color:'#BFBFBF'}} rel="noopener noreferrer">View GItHub Repository</a><br></br>
+            <a href={props.link} target="_blank" style={{color:'#BFBFBF'}} rel="noopener noreferrer">View Deployed App</a>
         </animated.div>
     );
 

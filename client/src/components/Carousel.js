@@ -20,6 +20,7 @@ class Carousel extends React.Component {
                     title: 'CastCall',
                     subTitle: 'Curate and Share your podcast collection',
                     imgSrc: castCall,
+                    gitHub: 'https://github.com/OnTheRocks/CastCall.git',
                     link: 'https://castcall.herokuapp.com',
                     selected: false
                 },
@@ -28,6 +29,7 @@ class Carousel extends React.Component {
                     title: 'Cumpleaños',
                     subTitle: 'A fun Birthday App',
                     imgSrc: Cumpleaños,
+                    gitHub: 'https://github.com/OnTheRocks/Cumpleanos.git',
                     link: 'https://ontherocks.github.io/Cumpleanos/',
                     selected: false
                 },
@@ -36,6 +38,7 @@ class Carousel extends React.Component {
                     title: 'Burger Time',
                     subTitle: 'Design and virtually eat a burger',
                     imgSrc: burger,
+                    gitHub: 'https://github.com/OnTheRocks/BurgerTime.git',
                     link: 'https://burger-time-54.herokuapp.com/',
                     selected: false
                 },
@@ -44,6 +47,7 @@ class Carousel extends React.Component {
                     title: 'Weather Search',
                     subTitle: 'Search weather for your city',
                     imgSrc: WeatherSearch,
+                    gitHub: 'https://github.com/OnTheRocks/WeatherSearch.git',
                     link: 'https://ontherocks.github.io/WeatherSearch/',
                     selected: false
                 },
