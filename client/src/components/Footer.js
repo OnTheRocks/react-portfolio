@@ -17,7 +17,6 @@ function Footer() {
             </Container>
         </footer>
     );
-
 }
 
 export default Footer;
